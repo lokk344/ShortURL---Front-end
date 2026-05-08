@@ -206,7 +206,7 @@ onMounted(() => {
                 target="_blank"
                 class="text-blue-500 underline"
               >
-                {{ BASE_URL }}/api/url/redirect/{{ url.shortCode }}
+                https://tn-url.site/{{ url.shortCode }}
               </a>
             </p>
 
