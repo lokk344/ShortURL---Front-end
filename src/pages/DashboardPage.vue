@@ -4,7 +4,7 @@ import { useRouter } from "vue-router"
 import api from "../services/api"
 
 const router = useRouter()
-const BASE_URL = "https://shorturl-backend-4h62.onrender.com"
+const BASE_URL = "https://tn-url.site/api"
 const originalUrl = ref("")
 const urls = ref([])
 const successMessage = ref("")
@@ -202,7 +202,7 @@ onMounted(() => {
               <strong>Short URL:</strong>
 
               <a
-                :href="`${BASE_URL}/api/url/redirect/${url.shortCode}`"
+                :href="`https://tn-url.site/${url.shortCode}`"
                 target="_blank"
                 class="text-blue-500 underline"
               >
@@ -211,7 +211,7 @@ onMounted(() => {
             </p>
 
             <button
-              @click="copyToClipboard(`${BASE_URL}/api/url/redirect/${url.shortCode}`)"
+              @click="copyToClipboard(`https://tn-url.site/${url.shortCode}`)"
               class="bg-gray-200 px-3 py-1 rounded mt-2"
             >
               Copy
